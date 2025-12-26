@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airports</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Airports Page</h1>
+      <p>
+        This page provides information about various airports around the world.
+      </p>
+      <form class="header-search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by IATA code..."
+        />
+        <button class="loadButton" type="submit">🔍</button>
+      </form>
+    </header>
+    <div class="airport"></div>
+    <template id="airport-card-template">
+      <div class="airport-card">
+        <div class="airport-card_header">
+          <img src="/assets/airplane_icon.png" alt="Airplane Icon" />
+          <h2 class="template-airport_country"></h2>
+          <p class="template-airport_timezone"></p>
+        </div>
+        <div class="airport-card_body">
+          <table class="airport-card_table">
+            <thead class="airport-card_table-header">
+              <tr>
+                <th>ICAO</th>
+                <th>IATA</th>
+                <th>Name</th>
+                <th>City</th>
+              </tr>
+            </thead>
+            <tbody class="airport-card_table-body">
+              <tr>
+                <td class="airport-card_table-icao"></td>
+                <td class="airport-card_table-iata"></td>
+                <td class="airport-card_table-name"></td>
+                <td class="airport-card_table-city"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="airport-card_info-icon">
+            <img src="/assets/info_icon.png" alt="Info Icon" />
+          </div>
+        </div>
+      </div>
+    </template>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/api.js" type="module"></script>
+    <script src="scripts/script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "watch-scss": "sass --watch styles",
+    "compile-scss": "sass styles/main.scss styles/main.css"
+  },
+  "dependencies": {
+    "axios": "^1.13.2"
+  }
+}

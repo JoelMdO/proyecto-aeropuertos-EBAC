@@ -1,0 +1,187 @@
+:root {
+  font-family: sans-serif;
+}
+
+.airport {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  padding: 20px;
+  background-color: rgb(174, 172, 170);
+  color: black;
+  width: 100vw;
+  height: 100dvh;
+  gap: 10px;
+}
+
+.airport-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border: 1px solid adjust(rgb(174, 172, 170), 60%);
+  border-radius: 12px;
+  margin: 8px;
+  height: 250px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.airport-card_header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  margin-top: 15px;
+}
+.airport-card_header img {
+  display: flex;
+  margin-left: 20px;
+  width: 40px;
+  height: 35px;
+}
+.airport-card_header h2 {
+  display: flex;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.airport-card_header p {
+  display: flex;
+  font-size: 1.2rem;
+  color: #fdd506;
+  margin: auto;
+}
+
+.airport-card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 80%;
+}
+.airport-card_body table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.airport-card_table-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+.airport-card_table-header tr {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+.airport-card_table-header th {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.airport-card_table-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  margin-top: 10px;
+}
+.airport-card_table-body tr {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.airport-card_table-icao,
+.airport-card_table-iata,
+.airport-card_table-name,
+.airport-card_table-city {
+  text-align: center;
+  font-size: 1em;
+}
+
+.airport-card_table-icao,
+.airport-card_table-iata,
+.airport-card_table-city,
+.airport-card_table-name {
+  color: #37ff06;
+}
+
+.airport-card_info-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10px;
+  width: 100%;
+  height: 30px;
+}
+.airport-card_info-icon img {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header button {
+  text-align: center;
+  margin: 0;
+  padding: 3px;
+  border: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.header-search input {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: rgb(174, 172, 170);
+}
+.header-search input::placeholder {
+  color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */
